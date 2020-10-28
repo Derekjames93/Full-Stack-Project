@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #48baf9,#30bf8a);
+}
+
+/* navbar */
+.nav-link {
+    color: #30bf8a;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-decoration: none !important;
+    font-family:'Cinzel', serif !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .nav-link:hover{
+    color: white;
+    background-color: #30bf8a;
+    border: solid 1px #30bf8a;
+  }
+  
+  .navbar-toggler svg{
+    width: 35px;
+    outline: none !important;
+    text-decoration: none !important;
+  }
+
+  .nav-item{
+    margin-bottom: 1rem;
+      }
+
+  
+  #navbarToggle {
+    outline: none !important;
+    margin: 5px;
+    text-decoration: none !important;
+    margin-top: 20px;
+  }
+
+.sec {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-bottom: 10px;
+    
+    margin-top: -5px;
+}
+
+
+.pic{
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px){
+    .sec{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 550px){
+    .kids{
+      max-width:  250%;
+    }
+}
+
+.content {
+    position: relative;
+    width: 1fr;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 3em;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.content h2 span {
+    color: #fff;
+    font-size: 0.7em;
+}
+
+.content p {
+    color: #fff;
+    margin: 10px 0 20px;
+    font-size: 1.1em;
+    font-weight: 100;
+    text-align: left;
+}
+
+/* create an account button */
+.content a {
+    padding: 10px 30px;
+    background: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: white;
+    background-color: #30bf8a;
+    border: solid 1px white;
+}
+
+/* kids image */
+.kids {
+    display: flex;
+    height: auto;
+    position: relative;
+    width: 1fr;
+    
+    margin: 4rem 0;
+}
+
+/* svg */
+.custom-shape-divider-bottom-1603248068 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1603248068 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+
+.custom-shape-divider-bottom-1603248068 .shape-fill {
+    fill: #FFFFFF;
+}
+
+ 

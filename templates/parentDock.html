@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Parently</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="normalize.css" /> -->
+  <link rel="stylesheet" href="/child-dock.css" />
+</head>
+
+<body style="background: linear-gradient(to right, #48baf9,#30bf8a)";>
+  <div class="container menu">
+    <div class="row">
+      <div class="col-sm-12 ">
+
+  <nav class="navbar navbar-expand-md ">
+
+    <!--  Show this only on mobile to medium screens  -->
+      <a class="navbar-brand d-md-none " href="#"><img src="/images/logo3.png" alt=""></a>
+    
+      <button class=" btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-justify" fill="#fff" xmlns="http://www.w3.org/2000/svg">              <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/></svg>
+      </button>
+      
+    <!--  Use flexbox utility classes to change how the child elements are justified  -->
+      <div class="collapse navbar-collapse justify-content-between " id="navbarToggle">
+    
+        <ul class="navbar-nav navbar-center nav justify-content-center">
+          
+          <li class="nav-item px-5">
+            <a class="nav-link nav-link-1" href="/overview">Overview</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link nav-link-1" href="/child">Child Login</a>
+          </li>
+        </ul>
+        
+        
+    <!--   Show this only lg screens and up   -->
+        <a class="navbar-brand d-none d-md-block nav justify-content-center" href="/"><img class="img-responsive" src="/images/logo3.png" alt=""></a>
+        
+        <ul class="navbar-nav navbar-center nav justify-content-center">
+          <li class="nav-item px-5 ">
+            <a class="nav-link nav-link-1" href="/logout">Sign Out</a>
+          </li>
+          <li class="nav-item px-5 ">
+            <a class="nav-link nav-link-1" href="/about-us">Creators</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+        
+</div>  
+</div>
+  <!-- <nav class="navbar navbar-expand-lg">
+    <p class="navbar-brand"> CHORES</p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-justify" fill="white"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto text-right">
+        <li class="nav-item">
+          <a class="nav-link-1" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-1" href="/about-us">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-1" href="/api/kids">kids</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-1" href="/logout">Sign Out</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav> -->
+
+  <div class="container ">
+    <div class="row ">
+      <div class="col-md-12 d-flex justify-content-center mt-4 mb-3 main-title">
+        <h1 >Parent Management</h1>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="wrapper" >
+
+    <main class="main">
+     
+      <section class="section container">
+
+        <header class="section__header">
+        
+
+         
+
+        </header>
+        <!-- TAKES INPUTS THAT ARE ADDED FROM CHORES -->
+        <ul class="project" id="chores">
+
+        </ul>
+<!-- TAKES CHORE INPUT  -->
+        <form action="/chores/${kidId}" method="post">
+          <div id="chore_input">
+            <label class="days" for="name">List of Chores</label>
+            <input  type="text" name="name" id="name" placeholder="Type the chore here">
+          </div>
+          <!-- DAYS TO ASSIGN CHORES -->
+          <div>
+            <label class="days"for="mon">Monday</label>
+            <input type="checkbox" name="mon" id="mon" class="checkme checkbox-custom">
+            <br>
+           
+
+          </div>
+
+          <div>
+            <label class="days" for="tue">Tuesday</label>
+            <input type="checkbox" name="tue" id="tue" class="checkme checkbox-custom">
+            <br>
+      
+          </div>
+
+          <div>
+            <label class="days" for="wed">Wednesday</label>
+            <input type="checkbox" name="Wed" id="Wed" class="checkme checkbox-custom">           
+            <br>
+           
+
+          </div>
+          <div>
+            <label class="days" for="thu">Thursday</label>
+            <input type="checkbox" name="thu" id="thu" class="checkme checkbox-custom">           
+            <br>
+           
+
+          </div>
+          <div>
+            <label class="days" for="fri">Friday</label>
+            <input type="checkbox" name="fri" id="fri" class="checkme checkbox-custom">
+            <br>
+           
+
+          </div>
+          <div>
+            <label class="days" for="fri">Saturday</label>
+            <input type="checkbox" name="sat" id="sat" class="checkme checkbox-custom">
+            <br>
+           
+
+          </div>
+          <div>
+            <label class="days" for="sun">Sunday</label>
+            <input type="checkbox" name="sun" id="sun" class="checkme checkbox-custom circular"> 
+            <br>
+           
+            <button class="btn add-chore">Add chore</button>
+            
+          </div>
+
+        </form>
+
+
+
+
+      </section>
+    </main>
+
+    <aside class="aside">
+      <section class="section">
+        <div class="aside__control">
+
+        </div>
+        <div class="profile-main">
+          <button class="profile-main__setting focus--box-shadow" type="button">
+            <img class="profile-main__photo" src="./images/child-profile.jpg" alt="Profile photo" />
+          </button>
+          <div id="display-name">
+
+          </div>
+
+          
+          <div id="display-prize">
+
+          </div>
+
+
+        </div>
+        <div id="points">
+
+        </div>
+        <!-- <ul class="statistics">
+          <li class="statistics__entry">
+            <p class="statistics__entry-description">Current points</p><span class="statistics__entry-quantity">5</span>
+          </li>
+          <li class="statistics__entry">
+            <p class="statistics__entry-description">Chores Left</p><span class="statistics__entry-quantity">3</span>
+          </li>
+          <li class="statistics__entry">
+            <p class="statistics__entry-description">Chores Done</p><span class="statistics__entry-quantity">8</span>
+          </li>
+          <li class="statistics__entry">
+            <p class="statistics__entry-description">Today's Prize</p><span class="statistics__entry-quantity">Ice
+              Cream</span>
+          </li>
+        </ul> -->
+
+      </section>
+    </aside>
+  </div>
+  <!-- <script>
+
+const task = document.querySelector('.project__item')
+     task.addEventListener('click' ,function(e){
+        
+                  if(task.style.textDecoration.val === 'line-through'){
+                    task.style.textDecoration = 'none'
+                  }else{
+                    task.style.textDecoration = 'line-through'
+                  }
+                  
+                })
+      
+    </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
+  <script src="/parentDock.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
